@@ -6,6 +6,12 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+vim.opt.listchars = {
+	tab = "> ",
+	trail = "⋅",
+	nbsp = "+",
+}
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
