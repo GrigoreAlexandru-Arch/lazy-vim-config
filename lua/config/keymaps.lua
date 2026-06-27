@@ -2,5 +2,9 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "q", "<nop>")
+pcall(vim.keymap.del, "n", "Q")
+pcall(vim.keymap.del, "n", "q")
+pcall(vim.keymap.del, "n", "<leader>gg") -- lazygit (root dir)
+pcall(vim.keymap.del, "n", "<leader>gG") -- lazygit (cwd)
+pcall(vim.keymap.del, "n", "<leader>gl") -- lazygit log (root dir)
+pcall(vim.keymap.del, "n", "<leader>gL") -- lazygit log (cwd)
